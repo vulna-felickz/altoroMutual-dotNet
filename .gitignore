@@ -7,3 +7,5 @@
 *.vbs
 *.gpf
 *.bak
+.DS_Store
+*.DS_Store
