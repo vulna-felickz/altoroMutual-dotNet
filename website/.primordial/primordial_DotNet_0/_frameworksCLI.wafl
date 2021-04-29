@@ -1,0 +1,44 @@
+<wafl xmlns="http://www.ibm.com/WAFLSchema">
+  <global-bean-decls>
+  </global-bean-decls>
+  <synthetic-methods>
+  </synthetic-methods>
+  <entrypoints>
+  </entrypoints>
+  <call-replacements>
+    <replace-call>
+      <call-site-info caller="ASP.bank_customize_aspx.__BuildControlHyperLink1():System.Web.UI.WebControls.HyperLink" call-sig="System.Web.UI.WebControls.HyperLink.set_NavigateUrl(System.String):System.Void" bytecodeIndex="40"/>
+      <replacement>
+        <call signature="System.Web.UI.WebControls.HyperLink.set_NavigateUrl(System.String):System.Void">
+          <actual-parameter pos="0">
+            <arg-to-orig-call pos="0"/>
+          </actual-parameter>
+          <actual-parameter pos="1">
+            <call signature="System.Web.HttpUtility.HtmlEncode(System.String):System.String">
+              <actual-parameter pos="0">
+                <arg-to-orig-call pos="1"/>
+              </actual-parameter>
+            </call>
+          </actual-parameter>
+        </call>
+      </replacement>
+    </replace-call>
+    <replace-call>
+      <call-site-info caller="ASP.bank_customize_aspx.__BuildControlHyperLink2():System.Web.UI.WebControls.HyperLink" call-sig="System.Web.UI.WebControls.HyperLink.set_NavigateUrl(System.String):System.Void" bytecodeIndex="40"/>
+      <replacement>
+        <call signature="System.Web.UI.WebControls.HyperLink.set_NavigateUrl(System.String):System.Void">
+          <actual-parameter pos="0">
+            <arg-to-orig-call pos="0"/>
+          </actual-parameter>
+          <actual-parameter pos="1">
+            <call signature="System.Web.HttpUtility.HtmlEncode(System.String):System.String">
+              <actual-parameter pos="0">
+                <arg-to-orig-call pos="1"/>
+              </actual-parameter>
+            </call>
+          </actual-parameter>
+        </call>
+      </replacement>
+    </replace-call>
+  </call-replacements>
+</wafl>
