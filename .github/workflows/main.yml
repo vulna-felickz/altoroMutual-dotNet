@@ -11,4 +11,4 @@ jobs:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
     env: 
-      GITHUB_TOKEN: ${{secrets.GIT_TOKEN}}
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
